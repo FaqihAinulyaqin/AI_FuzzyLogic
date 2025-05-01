@@ -1,4 +1,4 @@
-**TUGAS UTS AI - Fuzzy Logic**
+**TUGAS MK AI - Fuzzy Logic**
 
 **Anggota**
   - Irham Baehaqi - 1302220063
