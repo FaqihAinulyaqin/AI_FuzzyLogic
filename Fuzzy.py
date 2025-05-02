@@ -5,51 +5,51 @@ df = pd.read_excel("restoran.xlsx")
 
 # 2. Fungsi Keanggotaan Pelayanan
 def pelayanan_buruk(x):
-    if x <= 30:
+    if x <= 25:
         return 1
-    elif 30 < x <= 50:
-        return (50 - x) / 20
+    elif 25 < x <= 50:
+        return (50 - x) / 25
     else:
         return 0
 
 def pelayanan_cukup(x):
-    if 40 < x <= 60:
-        return (x - 40) / 20
-    elif 60 < x <= 80:
-        return (80 - x) / 20
+    if 25 < x <= 50:
+        return (x - 25) / 25
+    elif 50 < x <= 75:
+        return (75 - x) / 25
     else:
         return 0
 
 def pelayanan_baik(x):
-    if x >= 85:
+    if x >= 75:
         return 1
-    elif 70 < x < 85:
-        return (x - 70) / 15
+    elif 50 < x < 75:
+        return (x - 50) / 25
     else:
         return 0
 
 # 3. Fungsi Keanggotaan Harga
 def harga_murah(x):
-    if x <= 35000:
+    if x <= 32500:
         return 1
-    elif 35000 < x <= 45000:
-        return (45000 - x) / 10000
+    elif 32500 < x <= 40000:
+        return (40000 - x) / 7500
     else:
         return 0
 
 def harga_sedang(x):
-    if 35000 < x <= 45000:
-        return (x - 35000) / 10000
-    elif 45000 < x <= 55000:
-        return (55000 - x) / 10000
+    if 32500 < x <= 40000:
+        return (x - 32500) / 7500
+    elif 40000 < x <= 47500:
+        return (47500 - x) / 7500
     else:
         return 0
 
 def harga_mahal(x):
-    if x >= 55000:
+    if x >= 47500:
         return 1
-    elif 45000 < x < 55000:
-        return (x - 45000) / 10000
+    elif 40000 < x < 47500:
+        return (x - 40000) / 7500
     else:
         return 0
 
